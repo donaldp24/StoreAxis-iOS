@@ -108,8 +108,6 @@ enum BeaconDistance {
 - (void)initRegion {
     NSUUID *uuid = [[NSUUID alloc] initWithUUIDString:@"E2C56DB5-DFFB-48D2-B060-D0F5A71096E0"];
     self.beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:uuid
-                                                                major:1
-                                                                minor:1
                                                            identifier:@"com.matthew.beaconRegion"];
     self.beaconRegion.notifyEntryStateOnDisplay = NO; //Used for Monitoring
     self.beaconRegion.notifyOnEntry = YES; //Used for Monitoring
